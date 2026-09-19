@@ -1,0 +1,1538 @@
+[root@ip-172-31-1-54 ec2-user]# cd singaporegit/
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 4
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4 (HEAD -> master, origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch branch1
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+  branch1
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 4
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git checkout branch1
+Switched to branch 'branch1'
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+* branch1
+  master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 4
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4 (HEAD -> branch1, origin/master, master)
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat >branch1file
+Hello to all
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 8
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root  13 Sep 18 09:32 branch1file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch branch1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   branch1file
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "branch 1st commit"
+[branch1 22a392a] branch 1st commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 branch1file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f (HEAD -> branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4 (origin/master, master)
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch branch1
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git checkout master
+Switched to branch 'master'
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 4
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4 (HEAD -> master, origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+  branch1
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git checkout branch1
+Switched to branch 'branch1'
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+* branch1
+  master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 8
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root  13 Sep 18 09:35 branch1file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat >branch2file
+Hi
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 12
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root  13 Sep 18 09:35 branch1file
+-rw-r--r--. 1 root root   3 Sep 18 09:36 branch2file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch branch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        branch2file
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git checkout master
+Switched to branch 'master'
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 8
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:36 branch2file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git checkout branch1
+Switched to branch 'branch1'
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch branch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        branch2file
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "2nd commit from branch1"
+[branch1 be9b37b] 2nd commit from branch1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 branch2file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (HEAD -> branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4 (origin/master, master)
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 12
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:36 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:37 branch1file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git checkout master
+Switched to branch 'master'
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 4
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4 (HEAD -> master, origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+  branch1
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+
+
+
+
+
+
+
+
+
+
+
+
+=========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+  branch1
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls 
+mumbai1
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4 (HEAD -> master, origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git merge branch1
+Updating 70022bd..be9b37b
+Fast-forward
+ branch1file | 1 +
+ branch2file | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 branch1file
+ create mode 100644 branch2file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 12
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (HEAD -> master, branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4 (origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+  branch1
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git push origin master
+Username for 'https://github.com': smalus1
+Password for 'https://smalus1@github.com': 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 489 bytes | 489.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/smalus1/centralgit.git
+   70022bd..be9b37b  master -> master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+
+
+
+
+
+
+
+
+
+
+
+
+========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-1-54 singaporegit]# git branch
+  branch1
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 12
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat > rajputfile
+Hello Rajput
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 16
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  13 Sep 18 10:15 rajputfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        rajputfile
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "first commit before conflict"
+[master 73e4938] first commit before conflict
+ 1 file changed, 1 insertion(+)
+ create mode 100644 rajputfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit 73e49381339afc857dee7e27761111ca0fd0c976 (HEAD -> master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:16:04 2026 +0000
+
+    first commit before conflict
+
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (origin/master, branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git checkout branch1
+Switched to branch 'branch1'
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (HEAD -> branch1, origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 12
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat > rajputfile
+Hi Rajput
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 16
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  10 Sep 18 10:16 rajputfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch branch1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        rajputfile
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "commit from branch1 conflict"
+[branch1 b91ebf3] commit from branch1 conflict
+ 1 file changed, 1 insertion(+)
+ create mode 100644 rajputfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 16
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  10 Sep 18 10:16 rajputfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit b91ebf3275b6a111cb501633d013c11465f342d7 (HEAD -> branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:18:26 2026 +0000
+
+    commit from branch1 conflict
+
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch1
+git: 'branch1' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+* branch1
+  master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git checkout master
+Switched to branch 'master'
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+  branch1
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 16
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  13 Sep 18 10:18 rajputfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git merge branch1
+Auto-merging rajputfile
+CONFLICT (add/add): Merge conflict in rajputfile
+Automatic merge failed; fix conflicts and then commit the result.
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# vi rajputfile 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git merge branch1
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# vi rajputfile 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      rajputfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "resolve conflict"
+[master 003972d] resolve conflict
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit 003972d5cc2ffd4844535c39ed0bce79622b9eb0 (HEAD -> master)
+Merge: 73e4938 b91ebf3
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:22:33 2026 +0000
+
+    resolve conflict
+
+commit b91ebf3275b6a111cb501633d013c11465f342d7 (branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:18:26 2026 +0000
+
+    commit from branch1 conflict
+
+commit 73e49381339afc857dee7e27761111ca0fd0c976
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:16:04 2026 +0000
+
+    first commit before conflict
+
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+[root@ip-172-31-1-54 singaporegit]# git show
+commit 003972d5cc2ffd4844535c39ed0bce79622b9eb0 (HEAD -> master)
+Merge: 73e4938 b91ebf3
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:22:33 2026 +0000
+
+    resolve conflict
+
+diff --cc rajputfile
+index 5e5e2b0,d4dd0b5..ca8fc08
+--- a/rajputfile
++++ b/rajputfile
+@@@ -1,1 -1,1 +1,3 @@@
+ -Hi Rajput
+ +Hello Rajput
+++Rajput kyaa haaal haai??
+++>>>>>>> branch1
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 16
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 16
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# touch demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demofile
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# git commit -m "demofile"
+[master 39e401b] demofile
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+  branch1
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit 39e401b2dc7cd5a497e7c4256f5a1c76c91f4569 (HEAD -> master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:49:05 2026 +0000
+
+    demofile
+
+commit 003972d5cc2ffd4844535c39ed0bce79622b9eb0
+Merge: 73e4938 b91ebf3
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:22:33 2026 +0000
+
+    resolve conflict
+
+commit b91ebf3275b6a111cb501633d013c11465f342d7 (branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:18:26 2026 +0000
+
+    commit from branch1 conflict
+
+commit 73e49381339afc857dee7e27761111ca0fd0c976
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:16:04 2026 +0000
+
+    first commit before conflict
+
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# vi demofile 
+[root@ip-172-31-1-54 singaporegit]# vi demofile 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat demofile 
+first code
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 20
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  11 Sep 18 10:49 demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demofile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash
+Saved working directory and index state WIP on master: 39e401b demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 16
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root   0 Sep 18 10:50 demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat demofile 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash list
+stash@{0}: WIP on master: 39e401b demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# vi demofile 
+[root@ip-172-31-1-54 singaporegit]# vi demofile 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat demofile 
+second code for client
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demofile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash
+Saved working directory and index state WIP on master: 39e401b demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash list
+stash@{0}: WIP on master: 39e401b demofile
+stash@{1}: WIP on master: 39e401b demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat demofile 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash apply stash@{1}
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demofile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat demofile 
+first code
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demofile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "First code done"
+[master bf0aa20] First code done
+ 1 file changed, 1 insertion(+)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 20
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  11 Sep 18 10:53 demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit bf0aa209215cee54d2855525b01ad6943d46b0d5 (HEAD -> master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:53:54 2026 +0000
+
+    First code done
+
+commit 39e401b2dc7cd5a497e7c4256f5a1c76c91f4569
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:49:05 2026 +0000
+
+    demofile
+
+commit 003972d5cc2ffd4844535c39ed0bce79622b9eb0
+Merge: 73e4938 b91ebf3
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:22:33 2026 +0000
+
+    resolve conflict
+
+commit b91ebf3275b6a111cb501633d013c11465f342d7 (branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:18:26 2026 +0000
+
+    commit from branch1 conflict
+
+commit 73e49381339afc857dee7e27761111ca0fd0c976
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:16:04 2026 +0000
+
+    first commit before conflict
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash list
+stash@{0}: WIP on master: 39e401b demofile
+stash@{1}: WIP on master: 39e401b demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash apply stash@{0}
+Auto-merging demofile
+CONFLICT (content): Merge conflict in demofile
+On branch master
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   demofile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# vi demofile 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# vi demofile 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   demofile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# git commit -m "second code done"
+[master ca573df] second code done
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit ca573dfdcc207d8c367d5888f14ff2e5eaffe165 (HEAD -> master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:56:09 2026 +0000
+
+    second code done
+
+commit bf0aa209215cee54d2855525b01ad6943d46b0d5
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:53:54 2026 +0000
+
+    First code done
+
+commit 39e401b2dc7cd5a497e7c4256f5a1c76c91f4569
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:49:05 2026 +0000
+
+    demofile
+
+commit 003972d5cc2ffd4844535c39ed0bce79622b9eb0
+Merge: 73e4938 b91ebf3
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:22:33 2026 +0000
+
+    resolve conflict
+
+commit b91ebf3275b6a111cb501633d013c11465f342d7 (branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:18:26 2026 +0000
+
+    commit from branch1 conflict
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit ca573dfdcc207d8c367d5888f14ff2e5eaffe165 (HEAD -> master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:56:09 2026 +0000
+
+    second code done
+
+commit bf0aa209215cee54d2855525b01ad6943d46b0d5
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:53:54 2026 +0000
+
+    First code done
+
+commit 39e401b2dc7cd5a497e7c4256f5a1c76c91f4569
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:49:05 2026 +0000
+
+    demofile
+
+commit 003972d5cc2ffd4844535c39ed0bce79622b9eb0
+Merge: 73e4938 b91ebf3
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:22:33 2026 +0000
+
+    resolve conflict
+
+commit b91ebf3275b6a111cb501633d013c11465f342d7 (branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:18:26 2026 +0000
+
+    commit from branch1 conflict
+
+commit 73e49381339afc857dee7e27761111ca0fd0c976
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:16:04 2026 +0000
+
+    first commit before conflict
+
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+ca573df (HEAD -> master) second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 20
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash list
+stash@{0}: WIP on master: 39e401b demofile
+stash@{1}: WIP on master: 39e401b demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash clear
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git stash list
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-1-54 singaporegit]# ls
+branch1file  branch2file  demofile  mumbai1  rajputfile
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 20
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git branch
+  branch1
+* master
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat > testfile
+hi shivam
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 24
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+-rw-r--r--. 1 root root  10 Sep 18 11:19 testfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testfile
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   testfile
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git reset .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        testfile
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   testfile
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git reset --hard
+HEAD is now at ca573df second code done
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
