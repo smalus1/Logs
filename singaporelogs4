@@ -1,0 +1,937 @@
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 20
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit ca573dfdcc207d8c367d5888f14ff2e5eaffe165 (HEAD -> master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:56:09 2026 +0000
+
+    second code done
+
+commit bf0aa209215cee54d2855525b01ad6943d46b0d5
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:53:54 2026 +0000
+
+    First code done
+
+commit 39e401b2dc7cd5a497e7c4256f5a1c76c91f4569
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:49:05 2026 +0000
+
+    demofile
+
+commit 003972d5cc2ffd4844535c39ed0bce79622b9eb0
+Merge: 73e4938 b91ebf3
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:22:33 2026 +0000
+
+    resolve conflict
+
+commit b91ebf3275b6a111cb501633d013c11465f342d7 (branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:18:26 2026 +0000
+
+    commit from branch1 conflict
+
+commit 73e49381339afc857dee7e27761111ca0fd0c976
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:16:04 2026 +0000
+
+    first commit before conflict
+
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat > revertfile
+paneer
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 24
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+-rw-r--r--. 1 root root   7 Sep 18 13:22 revertfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        revertfile
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   revertfile
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "This is first shahi paneer commit"
+[master 469f10c] This is first shahi paneer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 revertfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+469f10c (HEAD -> master) This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat >revertfile
+mushroom
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   revertfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   revertfile
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "This is mushroom commit"
+[master 7350de3] This is mushroom commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+7350de3 (HEAD -> master) This is mushroom commit
+469f10c This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat revertfile
+mushroom
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat >>revertfile 
+garam masala
+chana masala
+mirch
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 24
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+-rw-r--r--. 1 root root  41 Sep 18 13:25 revertfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat revertfile 
+mushroom
+garam masala
+chana masala
+mirch
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   revertfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "Wrong commit"
+[master 61e1e5e] Wrong commit
+ 1 file changed, 3 insertions(+)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+61e1e5e (HEAD -> master) Wrong commit
+7350de3 This is mushroom commit
+469f10c This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git revert 61e1e5e
+[master 655725a] Revert "Wrong commit"{please ignore this commit}
+ 1 file changed, 3 deletions(-)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 24
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+-rw-r--r--. 1 root root   9 Sep 18 13:27 revertfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat revertfile 
+mushroom
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+655725a (HEAD -> master) Revert "Wrong commit"{please ignore this commit}
+61e1e5e Wrong commit
+7350de3 This is mushroom commit
+469f10c This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 20
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log
+commit ca573dfdcc207d8c367d5888f14ff2e5eaffe165 (HEAD -> master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:56:09 2026 +0000
+
+    second code done
+
+commit bf0aa209215cee54d2855525b01ad6943d46b0d5
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:53:54 2026 +0000
+
+    First code done
+
+commit 39e401b2dc7cd5a497e7c4256f5a1c76c91f4569
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:49:05 2026 +0000
+
+    demofile
+
+commit 003972d5cc2ffd4844535c39ed0bce79622b9eb0
+Merge: 73e4938 b91ebf3
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:22:33 2026 +0000
+
+    resolve conflict
+
+commit b91ebf3275b6a111cb501633d013c11465f342d7 (branch1)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:18:26 2026 +0000
+
+    commit from branch1 conflict
+
+commit 73e49381339afc857dee7e27761111ca0fd0c976
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:16:04 2026 +0000
+
+    first commit before conflict
+
+commit be9b37b8386a3c683eb9cc0d9a15acfe6593d0de (origin/master)
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:38:03 2026 +0000
+
+    2nd commit from branch1
+
+commit 22a392a31fdb0477d4c4ecb0f61ab46d7702f84f
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 09:33:38 2026 +0000
+
+    branch 1st commit
+
+commit 70022bd21dd890b8644e6a36322590e5b5989fd4
+Author: viraj <viraj@gmail.com>
+Date:   Thu Sep 17 19:02:01 2026 +0000
+
+    My first commit from singapore
+
+commit 03ac1dd2c66bb565815c825b15d1050c1c71e44f
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 18:40:37 2026 +0000
+
+    My second code from Mumbai
+
+commit 4e5a0d2fb52593c337704a66b6116bb8935355b7
+Author: shivam <malusareshivam2210@gmail.com>
+Date:   Thu Sep 17 17:44:40 2026 +0000
+
+    My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat > revertfile
+paneer
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 24
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+-rw-r--r--. 1 root root   7 Sep 18 13:22 revertfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        revertfile
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   revertfile
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "This is first shahi paneer commit"
+[master 469f10c] This is first shahi paneer commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 revertfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+469f10c (HEAD -> master) This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat >revertfile
+mushroom
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   revertfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   revertfile
+
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "This is mushroom commit"
+[master 7350de3] This is mushroom commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+7350de3 (HEAD -> master) This is mushroom commit
+469f10c This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat revertfile
+mushroom
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat >>revertfile 
+garam masala
+chana masala
+mirch
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 24
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+-rw-r--r--. 1 root root  41 Sep 18 13:25 revertfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# cat revertfile 
+mushroom
+garam masala
+chana masala
+mirch
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   revertfile
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git add .
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git commit -m "Wrong commit"
+[master 61e1e5e] Wrong commit
+ 1 file changed, 3 insertions(+)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+61e1e5e (HEAD -> master) Wrong commit
+7350de3 This is mushroom commit
+469f10c This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git revert 61e1e5e
+[master 655725a] Revert "Wrong commit"{please ignore this commit}
+ 1 file changed, 3 deletions(-)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# touch filex filey filez ddffff kkkm
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 24
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+-rw-r--r--. 1 root root   9 Sep 18 13:27 revertfile
+-rw-r--r--. 1 root root   0 Sep 18 13:31 kkkm
+-rw-r--r--. 1 root root   0 Sep 18 13:31 filez
+-rw-r--r--. 1 root root   0 Sep 18 13:31 filey
+-rw-r--r--. 1 root root   0 Sep 18 13:31 filex
+-rw-r--r--. 1 root root   0 Sep 18 13:31 ddffff
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ddffff
+        filex
+        filey
+        filez
+        kkkm
+
+nothing added to commit but untracked files present (use "git add" to track)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git clean -n
+Would remove ddffff
+Would remove filex
+Would remove filey
+Would remove filez
+Would remove kkkm
+[root@ip-172-31-1-54 singaporegit]# git clean -f
+Removing ddffff
+Removing filex
+Removing filey
+Removing filez
+Removing kkkm
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git status
+On branch master
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# ls -ltr
+total 24
+-rw-r--r--. 1 root root 101 Sep 17 19:00 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 09:59 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 09:59 branch1file
+-rw-r--r--. 1 root root  54 Sep 18 10:21 rajputfile
+-rw-r--r--. 1 root root  47 Sep 18 10:55 demofile
+-rw-r--r--. 1 root root   9 Sep 18 13:27 revertfile
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===============================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+655725a (HEAD -> master) Revert "Wrong commit"{please ignore this commit}
+61e1e5e Wrong commit
+7350de3 This is mushroom commit
+469f10c This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# git tag -a important -m "This is very important commit" 003972d
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git tag
+important
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git show important
+tag important
+Tagger: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 13:35:47 2026 +0000
+
+This is very important commit
+
+commit 003972d5cc2ffd4844535c39ed0bce79622b9eb0 (tag: important)
+Merge: 73e4938 b91ebf3
+Author: viraj <viraj@gmail.com>
+Date:   Fri Sep 18 10:22:33 2026 +0000
+
+    resolve conflict
+
+diff --cc rajputfile
+index 5e5e2b0,d4dd0b5..ca8fc08
+--- a/rajputfile
++++ b/rajputfile
+@@@ -1,1 -1,1 +1,3 @@@
+ -Hi Rajput
+ +Hello Rajput
+++Rajput kyaa haaal haai??
+++>>>>>>> branch1
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git tag -d important 
+Deleted tag 'important' (was 01a95d4)
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git tag
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+655725a (HEAD -> master) Revert "Wrong commit"{please ignore this commit}
+61e1e5e Wrong commit
+7350de3 This is mushroom commit
+469f10c This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git tag -a important -m "This is very important commit" 003972d
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# git log --oneline
+655725a (HEAD -> master) Revert "Wrong commit"{please ignore this commit}
+61e1e5e Wrong commit
+7350de3 This is mushroom commit
+469f10c This is first shahi paneer commit
+ca573df second code done
+bf0aa20 First code done
+39e401b demofile
+003972d (tag: important) resolve conflict
+b91ebf3 (branch1) commit from branch1 conflict
+73e4938 first commit before conflict
+be9b37b (origin/master) 2nd commit from branch1
+22a392a branch 1st commit
+70022bd My first commit from singapore
+03ac1dd My second code from Mumbai
+4e5a0d2 My first commit from mumbai
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+[root@ip-172-31-1-54 singaporegit]# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====================================================
+
+
+
+
+
+
+
+
+
+[root@ip-172-31-1-54 ec2-user]# git clone https://github.com/smalus1/centralgit.git
+Cloning into 'centralgit'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 15 (delta 1), reused 15 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (15/15), done.
+Resolving deltas: 100% (1/1), done.
+[root@ip-172-31-1-54 ec2-user]# 
+[root@ip-172-31-1-54 ec2-user]# 
+[root@ip-172-31-1-54 ec2-user]# ls -ltr
+total 0
+drwxr-xr-x. 3 root root 123 Sep 18 13:32 singaporegit
+drwxr-xr-x. 3 root root  71 Sep 18 13:48 centralgit
+[root@ip-172-31-1-54 ec2-user]# 
+[root@ip-172-31-1-54 ec2-user]# 
+[root@ip-172-31-1-54 ec2-user]# cd centralgit/
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# ls -ltr
+total 12
+-rw-r--r--. 1 root root 101 Sep 18 13:48 mumbai1
+-rw-r--r--. 1 root root   3 Sep 18 13:48 branch2file
+-rw-r--r--. 1 root root  13 Sep 18 13:48 branch1file
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# touch filez
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# git add .
+[root@ip-172-31-1-54 centralgit]# git commit -m "New commit"
+[master 6b01c1d] New commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 filez
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# git push origin master
+Username for 'https://github.com': smalus1
+Password for 'https://smalus1@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 252 bytes | 252.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/smalus1/centralgit.git
+   be9b37b..6b01c1d  master -> master
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+[root@ip-172-31-1-54 centralgit]# 
+
+
+
+
+
+
+
+
+
+============================================================
+
+
+
+
+
+
+
+
+
+
+	
